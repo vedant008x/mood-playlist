@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Playlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎵 Mood Playlist</h1>
+        <p>Select your mood & find the perfect songs</p>
+    </header>
+
+    <section id="moods">
+        <div class="mood" onclick="showPlaylist('happy')">😊 Happy</div>
+        <div class="mood" onclick="showPlaylist('sad')">😢 Sad</div>
+        <div class="mood" onclick="showPlaylist('relax')">😌 Relax</div>
+        <div class="mood" onclick="showPlaylist('party')">🎉 Party</div>
+    </section>
+
+    <section id="playlist">
+        <h2>Playlist</h2>
+        <ul id="songList"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
